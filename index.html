@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About | StoreMate</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@4.10.0/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="assets/admin-custom.css">
+
+    <style>
+        .developer-toggle-icon {
+            transition: transform .25s ease;
+        }
+
+        .developer-toggle[aria-expanded="true"] .developer-toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .developer-toggle-icon {
+                transition: none;
+            }
+        }
+    </style>
+
+    <script>
+        (function () {
+            var theme = localStorage.getItem('storeTheme') || 'light';
+            document.documentElement.setAttribute('data-bs-theme', theme);
+        })();
+    </script>
+</head>
+<body class="bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.php">
+                Store<span class="text-primary">Mate</span>
+            </a>
+
+            <div class="ms-auto d-flex gap-2">
+                <a class="btn btn-outline-primary" href="about.html" aria-current="page">About</a>
+                <button id="themeToggle" class="btn btn-outline-secondary" aria-label="Toggle theme">
+                    <i class="bi bi-moon-stars" id="themeIcon"></i>
+                </button>
+                <a class="btn btn-primary" href="login.php">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="py-5 bg-body">
+            <div class="container">
+                <a class="btn btn-outline-secondary mb-4" href="index.php">
+                    <i class="bi bi-arrow-left me-2"></i>Back to Home
+                </a>
+
+                <div class="text-center mb-4">
+                    <span class="text-primary fw-semibold">ABOUT THE SYSTEM</span>
+                    <h1 class="fw-bold mt-2">About Our System</h1>
+                    <p class="fs-4 fw-semibold mb-2">Everything your small store needs.</p>
+                    <p class="text-secondary">
+                        A web-based system to make daily store tasks more organized and accurate.
+                    </p>
+                </div>
+
+                <section class="card mb-4" aria-labelledby="systemOverviewHeading">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="bi bi-shop-window fs-2 text-primary" aria-hidden="true"></i>
+                            <div>
+                                <h2 class="h3" id="systemOverviewHeading">System Overview</h2>
+                                <h3 class="h5">Store Inventory and Sales Management System</h3>
+                                <p class="text-secondary mb-0">
+                                    The Store Inventory and Sales Management System is a web-based application designed to help small neighborhood convenience stores manage their daily business operations. It provides features for managing products, monitoring inventory, recording sales transactions, managing customers and suppliers, and generating reports. The system aims to reduce manual work, improve record accuracy, and make store management more organized and efficient.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="bi bi-box-seam fs-2 text-primary"></i>
+                                <h2 class="h4 mt-3">Product Records</h2>
+                                <p class="text-secondary mb-0">
+                                    Organize product names, categories, and prices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="bi bi-clipboard-data fs-2 text-success"></i>
+                                <h2 class="h4 mt-3">Stock Monitoring</h2>
+                                <p class="text-secondary mb-0">
+                                    Check quantities and identify items that need restocking.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="bi bi-receipt fs-2 text-warning"></i>
+                                <h2 class="h4 mt-3">Sales Tracking</h2>
+                                <p class="text-secondary mb-0">
+                                    Record transactions and automatically update stock.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="card mt-4" aria-labelledby="generalObjectiveHeading">
+                    <div class="card-body p-4">
+                        <div class="d-flex align-items-start gap-3">
+                            <i class="bi bi-bullseye fs-2 text-primary" aria-hidden="true"></i>
+                            <div>
+                                <h2 class="h3" id="generalObjectiveHeading">General Objective</h2>
+                                <p class="text-secondary mb-0">
+                                    To develop a web-based Store Inventory and Sales Management System that helps small neighborhood convenience stores manage products, monitor inventory, record sales transactions, and generate reports efficiently, accurately, and conveniently.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mt-4" aria-labelledby="specificObjectivesHeading">
+                    <div class="mb-3">
+                        <h2 class="h3" id="specificObjectivesHeading">Specific Objectives</h2>
+                        <p class="text-secondary mb-0">The system is designed to support these everyday store operations:</p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-box-seam fs-3 text-primary" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Product Management</h3>
+                                    <p class="text-secondary mb-0">Provide a platform for adding, updating, deleting, searching, and viewing product information.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-clipboard-data fs-3 text-success" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Inventory Management</h3>
+                                    <p class="text-secondary mb-0">Monitor product quantities, track stock movements, and maintain accurate inventory records.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-receipt fs-3 text-warning" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Sales Management</h3>
+                                    <p class="text-secondary mb-0">Record sales transactions, calculate purchase totals, and update inventory after every sale.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-exclamation-triangle fs-3 text-danger" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Low-Stock Monitoring</h3>
+                                    <p class="text-secondary mb-0">Identify products with low stock levels and help store owners determine what needs restocking.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-people fs-3 text-info" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Customer and Supplier Management</h3>
+                                    <p class="text-secondary mb-0">Organize and maintain customer and supplier information.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-bar-chart-line fs-3 text-primary" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Report Generation</h3>
+                                    <p class="text-secondary mb-0">Generate sales and inventory reports to help store owners monitor business performance.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-person-lock fs-3 text-secondary" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">User Management</h3>
+                                    <p class="text-secondary mb-0">Provide separate administrator and staff access with appropriate permissions.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="row g-3 mt-1">
+                    <div class="col-12 col-lg-6">
+                        <section class="card h-100" aria-labelledby="missionHeading">
+                            <div class="card-body p-4">
+                                <i class="bi bi-heart fs-2 text-danger" aria-hidden="true"></i>
+                                <h2 class="h3 mt-3" id="missionHeading">Our Mission</h2>
+                                <p class="text-secondary mb-0">
+                                    Our mission is to provide a simple, reliable, and user-friendly inventory and sales management solution that helps small convenience stores organize their daily operations, improve record accuracy, reduce manual work, and manage their business more effectively through technology.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <section class="card h-100" aria-labelledby="visionHeading">
+                            <div class="card-body p-4">
+                                <i class="bi bi-eye fs-2 text-primary" aria-hidden="true"></i>
+                                <h2 class="h3 mt-3" id="visionHeading">Our Vision</h2>
+                                <p class="text-secondary mb-0">
+                                    Our vision is to become a practical and accessible digital management solution for small neighborhood stores, helping business owners improve their productivity, make better decisions, and adapt to modern technology in managing their businesses.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <section class="mt-4" aria-labelledby="ethicalStandardsHeading">
+                    <div class="mb-3">
+                        <h2 class="h3" id="ethicalStandardsHeading">Ethical Standards and Principles</h2>
+                        <p class="text-secondary mb-0">Principles that guide responsible handling of accounts, information, and store records.</p>
+                    </div>
+
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-shield-check fs-2 text-success" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Security</h3>
+                                    <p class="text-secondary">
+                                        The system ensures that only authorized users can access specific features and information. It protects user accounts and business records through proper authentication and security practices.
+                                    </p>
+                                    <h4 class="h6">Implementation in Our System</h4>
+                                    <ul class="text-secondary mb-0">
+                                        <li>Password hashing to protect user passwords.</li>
+                                        <li>Login authentication and session management.</li>
+                                        <li>Role-based access control for administrators and staff.</li>
+                                        <li>Prepared statements to help prevent SQL injection.</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-lock fs-2 text-primary" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Privacy and Data Protection</h3>
+                                    <p class="text-secondary">
+                                        The system respects the privacy of customers, staff, and administrators by protecting their personal information and limiting access to authorized users.
+                                    </p>
+                                    <h4 class="h6">Implementation in Our System</h4>
+                                    <ul class="text-secondary mb-0">
+                                        <li>Collect only necessary personal information.</li>
+                                        <li>Restrict access to sensitive information.</li>
+                                        <li>Prevent unauthorized disclosure of customer and employee records.</li>
+                                        <li>Handle stored information responsibly.</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <article class="card h-100">
+                                <div class="card-body">
+                                    <i class="bi bi-database fs-2 text-info" aria-hidden="true"></i>
+                                    <h3 class="h5 mt-3">Data Accuracy and Integrity</h3>
+                                    <p class="text-secondary">
+                                        The system maintains accurate, consistent, and reliable records of products, inventory, and sales transactions.
+                                    </p>
+                                    <h4 class="h6">Implementation in Our System</h4>
+                                    <ul class="text-secondary mb-0">
+                                        <li>Automatically calculate sales totals.</li>
+                                        <li>Deduct inventory quantities after successful transactions.</li>
+                                        <li>Validate product prices and quantities.</li>
+                                        <li>Prevent negative stock quantities.</li>
+                                        <li>Maintain consistent sales and inventory records.</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4" aria-labelledby="referencesHeading">
+                        <div class="card-body p-4">
+                            <h3 class="h4" id="referencesHeading">References</h3>
+                            <ol class="mb-0">
+                                <li class="mb-2">
+                                    National Privacy Commission. (2012). <em>Republic Act No. 10173: Data Privacy Act of 2012.</em>
+                                    <a href="https://privacy.gov.ph/Data-Privacy-Act/" target="_blank" rel="noopener noreferrer">https://privacy.gov.ph/Data-Privacy-Act/</a>
+                                </li>
+                                <li class="mb-2">
+                                    OWASP Foundation. (n.d.). <em>Password Storage Cheat Sheet.</em>
+                                    <a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html" target="_blank" rel="noopener noreferrer">https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html</a>
+                                </li>
+                                <li class="mb-2">
+                                    OWASP Foundation. (n.d.). <em>SQL Injection Prevention Cheat Sheet.</em>
+                                    <a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html" target="_blank" rel="noopener noreferrer">https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html</a>
+                                </li>
+                                <li>
+                                    Association for Computing Machinery. (2018). <em>ACM Code of Ethics and Professional Conduct.</em>
+                                    <a href="https://www.acm.org/code-of-ethics" target="_blank" rel="noopener noreferrer">https://www.acm.org/code-of-ethics</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mt-4" aria-labelledby="developerSectionHeading">
+                    <div class="card">
+                        <div class="card-body d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3">
+                            <div>
+                                <h2 class="h3 mb-1" id="developerSectionHeading">Developer</h2>
+                                <p class="text-secondary mb-0">Learn more about the developer and their skills.</p>
+                            </div>
+                            <button
+                                class="btn btn-primary developer-toggle"
+                                id="developerInfoToggle"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#developerInfoPanel"
+                                aria-expanded="false"
+                                aria-controls="developerInfoPanel"
+                            >
+                                <span class="developer-toggle-label">Developer Info</span>
+                                <i class="bi bi-chevron-down developer-toggle-icon ms-2" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <div
+                            class="collapse"
+                            id="developerInfoPanel"
+                            aria-labelledby="developerInfoHeading"
+                        >
+                            <div class="border-top p-3 p-md-4">
+                                <h3 class="visually-hidden" id="developerInfoHeading">Developer Information</h3>
+
+<div class="row g-3 mb-4">
+            <div class="col-12">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="row align-items-center g-4">
+                        <div class="col-12 col-md-3 text-center">
+                            <img
+                                class="rounded-circle object-fit-cover"
+                                src="assets/developer-profile.jpg"
+                                alt="Developer profile picture"
+                                width="132"
+                                height="132"
+                            >
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <h3 class="h4 mb-1">[Johnathan S Escorpion]</h3>
+                            <p class="text-primary fw-semibold mb-2">[Developer and Designer]</p>
+                            <p class="text-secondary">
+                                [Write a short introduction or biography for the developer.]                            </p>
+                            <dl class="row mb-0">
+                                <dt class="col-sm-3">Contact</dt>
+                                <dd class="col-sm-9 mb-0">[escorpionj784@gmail.com]</dd>
+                                <dt class="col-sm-3">Responsibilities</dt>
+                                <dd class="col-sm-9 mb-0">[Manage the development and design of the store inventory and sales management system, including coding and implementing features, ensuring system functionality, and maintaining the overall user experience.]</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<h3 class="h4 mt-4 mb-3">Skills and Technologies</h3>
+<div class="row g-3">
+    <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h4 class="h6"><i class="bi bi-code-slash text-primary me-2"></i>Programming and Web Development</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">HTML5</span>
+                    <span class="badge text-bg-light">CSS3</span>
+                    <span class="badge text-bg-light">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h4 class="h6"><i class="bi bi-server text-success me-2"></i>Backend Development</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">PHP</span>
+                    <span class="badge text-bg-light">jQuery</span>
+                    <span class="badge text-bg-light">AJAX</span>
+                    <span class="badge text-bg-light">CRUD Operations</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h4 class="h6"><i class="bi bi-database text-info me-2"></i>Database Management</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">MySQL</span>
+                    <span class="badge text-bg-light">phpMyAdmin</span>
+                    <span class="badge text-bg-light">Database Design</span>
+                    <span class="badge text-bg-light">SQL Queries</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h4 class="h6"><i class="bi bi-palette text-warning me-2"></i>UI/UX and System Design</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">Bootstrap 5</span>
+                    <span class="badge text-bg-light">AdminLTE 4</span>
+                    <span class="badge text-bg-light">Responsive Web Design</span>
+                    <span class="badge text-bg-light">User Interface Design</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-xl-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h4 class="h6"><i class="bi bi-bug text-danger me-2"></i>Development and Testing</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">XAMPP</span>
+                    <span class="badge text-bg-light">Debugging</span>
+                    <span class="badge text-bg-light">System Testing</span>
+                    <span class="badge text-bg-light">Problem-Solving</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-body">
+        <h3 class="h4">Additional Technical Skills</h3>
+        <div class="d-flex flex-wrap gap-2">
+            <span class="badge text-bg-primary">Database Design and Relationships</span>
+            <span class="badge text-bg-primary">System Analysis</span>
+            <span class="badge text-bg-primary">Logical Thinking</span>
+            <span class="badge text-bg-primary">Security Awareness</span>
+            <span class="badge text-bg-primary">Password Hashing and User Authentication</span>
+            <span class="badge text-bg-primary">Role-Based Access Control</span>
+            <span class="badge text-bg-primary">Data Validation</span>
+            <span class="badge text-bg-primary">Testing and Debugging</span>
+        </div>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-body">
+        <h3 class="h4">Project Information</h3>
+        <dl class="row mb-0">
+            <dt class="col-md-3">Project Title</dt>
+            <dd class="col-md-9">Store Inventory and Sales Management System</dd>
+
+            <dt class="col-md-3">Project Description</dt>
+            <dd class="col-md-9">
+                A web-based system designed to help small neighborhood convenience stores manage products, monitor inventory levels, record sales transactions, manage customers and suppliers, and generate reports efficiently.
+            </dd>
+
+            <dt class="col-md-3">Project Purpose</dt>
+            <dd class="col-md-9 mb-0">
+                To provide a simple, organized, and user-friendly solution for managing store operations while improving the accuracy and efficiency of inventory and sales management.
+            </dd>
+        </dl>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 border-top">
+        <div class="container d-flex flex-wrap justify-content-between gap-2 text-secondary small">
+            <span>© 2026 StoreMate · Store Inventory and Sales Management System</span>
+            <a href="login.php">Staff / Administrator Login</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+</html>
